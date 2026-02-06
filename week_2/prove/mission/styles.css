@@ -1,0 +1,45 @@
+body {
+    text-align: left;
+    margin: 0;
+    padding: 20px 20px 60px 20px;
+    max-width: 8.5in; /* Width of a standard piece of paper */
+    margin: 0 auto; /* Center the content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border: 1px solid #000; /* Optional: Add a border to mimic paper edges */
+}
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+    border-color: #ffffff; /* Optional: Change border color for dark mode */
+}
+
+body.dark h1, body.dark h2 {
+    color: #ffcc00; /* Yellow text for headings in dark mode */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body.dark ol li {
+    color: #cccccc; /* Lighter gray for list items */
+}
+
+h2 {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
