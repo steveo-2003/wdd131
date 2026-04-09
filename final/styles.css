@@ -1,0 +1,177 @@
+/* General styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFC857;
+    color: #481D24;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-family: 'Retimoa', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #E9724C;
+}
+
+.nav-bar li {
+    margin: 0 1rem;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar li a:hover {
+    background-color: #C5283D;
+}
+
+/* Reviews section for index.html */
+.reviews {
+    text-align: center;
+    padding: 2rem;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+.review {
+    flex: 0 0 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.review img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.review h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.review p {
+    margin: 0.5rem 0;
+}
+
+/* Search page styles */
+.search-section {
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFC857;
+}
+
+#search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #E9724C;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.filters label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.filters select {
+    padding: 0.5rem;
+    border: 1px solid #E9724C;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Centered and wider reviews for search page */
+.review-column .review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the reviews horizontally */
+    gap: 1.5rem;
+}
+
+.review-column .review {
+    width: 80%; /* Make reviews wider but not full width */
+    max-width: 800px; /* Set a maximum width */
+    background-color: #FFC857;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.review-column .review img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.review-column .review:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: #481D24;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-links li a {
+    color: #FFC857;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social-links li a:hover {
+    color: #E9724C;
+}

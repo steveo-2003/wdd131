@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Reviews - Steveo_2003 Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Steveo_2003 Reviews</h1>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="search-box" placeholder="Search reviews..." aria-label="Search reviews">
+            <div class="filters">
+                <label for="rating-filter">Rating:</label>
+                <select id="rating-filter">
+                    <option value="">All</option>
+                    <option value="⭐⭐⭐⭐⭐">5 Stars</option>
+                    <option value="⭐⭐⭐⭐">4 Stars</option>
+                    <option value="⭐⭐⭐">3 Stars</option>
+                </select>
+
+                <label for="medium-filter">Medium:</label>
+                <select id="medium-filter">
+                    <option value="">All</option>
+                    <option value="Book">Book</option>
+                    <option value="Movie">Movie</option>
+                    <option value="Game">Game</option>
+                </select>
+
+                <label for="genre-filter">Genre:</label>
+                <select id="genre-filter">
+                    <option value="">All</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                </select>
+
+                <label for="time-filter">Time Required:</label>
+                <select id="time-filter">
+                    <option value="">All</option>
+                    <option value="Short">Short (1-5 hours)</option>
+                    <option value="Medium">Medium (5-10 hours)</option>
+                    <option value="Long">Long (10+ hours)</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="review-column">
+            <div class="review-container">
+                <!-- Reviews will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Steveo_2003 Reviews. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
